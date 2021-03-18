@@ -63,25 +63,32 @@
 
 		#left{
 			float: left;
+			height: calc(100vh - 280px);
 			width:calc(20% - 30px);
-			background-color: #A0A0FF;	
+			background-color: #A0A0FF;
+			border-radius: 50px;	
 			
 		}
 		#right{
 			float: left;
+			height: calc(100vh - 280px);
 			width:calc(20% - 30px);
 			background-color: green;
+			border-radius: 50px;
+			margin: 10px;
 			
 		}
 		section, article {
 			float: left;
 			width: 60%;
 			background-color: gray;
+			border-radius: 50px;
+			margin: 10px;
 		}
 		
-		#left, #right, section {
-			height: calc(100vh - 280px);
+		section {
 			border-radius: 50px;
+			height: calc(100vh - 280px);
 			margin: 10px;
 		}
 		
@@ -97,13 +104,9 @@
 		h2{
 			text-align: center;
 		}
-		/* #user_id{
-			width: aut/o;
-			height: 30px;
+		iframe{
+			border-radius: 50px;
+			width: 160%;
 		}
-		aside #right #login{
-			width: auto;
-			
-		} */
 	
 	</style>
