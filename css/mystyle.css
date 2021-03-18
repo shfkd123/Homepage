@@ -1,14 +1,20 @@
 @charset "UTF-8";
 
 <style type="text/css">
+	
 		header{
 			height: 70px;
 		}
 		h1 {
+			background-color: #D2D2FF;
 			border-radius: 50px;
-			background-color: yellow;
 			margin-top: 20px;
-    		margin-bottom: 20px;		
+    		margin-bottom: 20px;
+    				
+		}
+		#logo{
+			padding-top:10px;
+			padding-left: 30px;
 		}
 		ul{	
 			list-style:none;		
@@ -23,12 +29,14 @@
 		li {
 			padding: 10px;
 			text-align: center;
+			border-radius: 50px;
+			margin-bottom: 10px;
 		}
 		ol li {		
 			list-style:none;
 			text-decoration: none;
 			font-size: 18pt;
-			background-color: purple;
+			background-color: #B4E5FF;
 		}
 		ol li a{
 			text-decoration: none;
@@ -57,23 +65,25 @@
 			color: #6478FF;
 		}
 		nav{
-			background-color: aqua;
+			background-color: #B4B4FF;
 			border-radius: 50px;
+			
 		}
 
 		#left{
 			float: left;
 			height: calc(100vh - 280px);
 			width:calc(20% - 30px);
-			background-color: #A0A0FF;
-			border-radius: 50px;	
+			background-color: #9BC3FF;
+			border-radius: 50px;
+			margin-top: 10px;	
 			
 		}
 		#right{
 			float: left;
 			height: calc(100vh - 280px);
 			width:calc(20% - 30px);
-			background-color: green;
+			background-color: #9BC3FF;
 			border-radius: 50px;
 			margin: 10px;
 			
@@ -81,7 +91,7 @@
 		section, article {
 			float: left;
 			width: 60%;
-			background-color: gray;
+			background-color: #BEEFFF;
 			border-radius: 50px;
 			margin: 10px;
 		}
@@ -92,21 +102,34 @@
 			margin: 10px;
 		}
 		
-		footer{
+		footer {
 			line-height:70px;
-			background-color: red;
+			background-color: #D2D2FF;
 			clear: both;
 			border-radius: 50px;
 			text-align: center;
 			font-size: 13pt;
 			
 		}
-		h2{
+		h2 {
 			text-align: center;
 		}
-		iframe{
+		
+		h4 {
+			margin: 0px;
+		}
+		iframe {
 			border-radius: 50px;
 			width: 160%;
 		}
-	
+		form {
+			padding-left: 60px;
+		}
+		#login {
+			width: 300px;
+			background-color: #BEEFFF;
+			border-radius: 30px;
+			margin-left: 20px;
+			
+		}
 	</style>

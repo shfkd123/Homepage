@@ -1,10 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<style type="text/css">
+		body {
+			background-color: #D2D2FF;
+			display: grid;
+  			place-items: center;
+		
+		}
+		div {
+			width: 500px;
+			display: grid;
+  			place-items: center;
+			border: solid 20px #9BC3FF;
+			border-radius: 50px;
+			padding: 30px;
+			margin-top: 15%;
+		}
+		
+		table{
+			border-collapse: collapse;
+		}
+		
+		table, th, th{
+			border: 5px solid #9BC3FF; 
+		}
+
+	</style>
 </head>
 <body>
+	<div>
+		<table border="1">
+		<caption>Shopping Cart</caption>
+		<tr>
+			<th>품목</th>
+			<th>가격</th>
+			<th>수량 </th>
+			<th>합계</th>
+		</tr>
+		<tr>
+			<td>컴퓨터세트</td>
+			<td id="price">2,000,000</td>
+			<td><input id="num" type="number" min="0" value="0" max="10" step="1"></td>
+			<td><input id="sum" type="number"></td>
+		</tr>
+		<tr>
+			<td>티셔츠</td>
+			<td id="price">50,000</td>
+			<td><input id="num" type="number" min="0" value="0" max="10" step="1"></td>
+			<td><input id="sum" type="number"></td>
+		</tr>
+		<tr>
+			<td>음악파일</td>
+			<td id="price">1000</td>
+			<td><input id="num" type="number" min="0" value="0" max="10" step="1"></td>
+			<td><input id="sum" type="number"></td>
+		</tr>
+		<tr>
+			<td>영화파일</td>
+			<td id="price">5000</td>
+			<td><input id="num" type="number" min="0" value="0" max="10" step="1"></td>
+			<td><input id="sum" type="number"></td>
+		</tr>
+	</table>
+	<button type="button" onclick="calc()">계산</button>
+	<button type="button" onclick="buy()">구매</button>
+	<button type="reset">초기화</button>
+	<a href="main.html" target="_self">Back to Home</a>
+	</div>
 
+	<script type="text/javascript">
+		function calc(){
+			var num1 = document.getElementById('price');
+			var num2 = document.getElementById('num');
+			
+			var sum = (parseInt)num1 * (parseInt)num2;
+			
+			 // 합계 출력
+			 document.getElementById('sum').innerText = sum;	
+			 
+		}
+		function buy(){
+			alert("구매완료!");
+		}
+
+	</script>
 </body>
 </html>

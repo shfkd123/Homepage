@@ -11,18 +11,19 @@ text/css" href="./css/mystyle.css">
 	<!-- header -->
 	<header>
 		<h1>
-			<img src="../images/logo.png" alt="Web Shop logo"> <a href="index.html">Web Shop</a>
+			<img id="logo" src="./images/logo.png" alt="Web Shop logo" 
+			width="50px" height="60px"><a href="main.html" target="_self">Web Shop</a>
 		</h1>		
 	</header>
 	
 	<!-- nav -->
 	<nav>
 		<ul>
-			<li><a href="index.html">HOME</a>
-			<li><a href="index.html">SHOPPING ABOUT</a></li>
-			<li><a href="index.html">NEWS</a></li>
-			<li><a href="index.html">MY ACCOUNT</a></li>
-			<li><a href="index.html">CONTACTS</a></li>
+			<li><a href="main.html" target="_self">HOME</a>
+			<li><a href="main.html" target="_self">SHOPPING ABOUT</a></li>
+			<li><a href="main.html" target="_self">NEWS</a></li>
+			<li><a href="main.html" target="_self">MY ACCOUNT</a></li>
+			<li><a href="main.html" target="_self">CONTACTS</a></li>
 		</ul>
 	
 	</nav>
@@ -35,16 +36,16 @@ text/css" href="./css/mystyle.css">
 			<li><a href="clothing.html" target="main">의류</a></li>
 			<li><a href="music.html" target="main">음악</a></li>
 			<li><a href="movie.html" target="main">영화</a></li>
-			<li><a href="#" target="main">스포츠/레저</a></li>
-			<li><a href="#" target="main">가구/인테리어</a></li>
-			<li><a href="#" target="main">식품</a></li>
+			<li><a href="sports.html" target="main">스포츠/레저</a></li>
+			<li><a href="furniture.html" target="main">가구/인테리어</a></li>
+			<li><a href="food.html" target="main">식품</a></li>
 		</ol>
 	</aside>
 	
 	<!-- section -->
 	<section id ="main">
 		<article id="article1">
-			 <iframe src="computer.html" name="main" frameborder="0" width="550" height="600"></iframe>
+			 <iframe src="index.html" name="main" frameborder="0" width="550" height="600"></iframe>
 		</article>
 	</section>
 	
@@ -58,12 +59,14 @@ text/css" href="./css/mystyle.css">
 		<div id="login">
 			<h2>Log In</h2>
 			<form id = login_form action="#" method="POST">
-				아이디<br><input id="user_id" type="text"><br>
-				비밀번호<br><input id="user_pw" type="password"><br>
+				<h4>아이디</h4><input id="user_id" type="text"><br>
+				<h4>비밀번호</h4><input id="user_pw" type="password"><br>
 				<!-- 라벨 -->
-				<input id="login" type="submit" value="로그인"> 
-				<input id="reset" type="reset" value="초기화"><br> 
-				<a href="../register.html"target="_blank">회원가입</a> 
+				<br>
+				<input id="user_login" type="submit" value="로그인"> 
+				<input id="reset" type="reset" value="초기화"><br>
+				<br> 
+				<a href="register.html"target="_blank">회원가입</a> 
 				<a href="#">비밀번호 분실</a>
 			</form>
 		</div>
@@ -71,7 +74,7 @@ text/css" href="./css/mystyle.css">
 	   
 	<!-- footer -->
 	<footer>
-		2020.03.19 대덕인재개발원 042-1234-5678
+		<h5>2020.03.19 대덕인재개발원 042-1234-5678 김민지</h5>
 	</footer>
 	
 </body>

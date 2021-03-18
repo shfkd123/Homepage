@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<style type="text/css">
+		body {
+			background-color: #D2D2FF;
+			display: grid;
+  			place-items: center;
+		
+		}
+		div {
+			width: 300px;
+			display: grid;
+  			place-items: center;
+			border: solid 20px #9BC3FF;
+			border-radius: 50px;
+			padding: 30px;
+			margin-top: 15%;
+		}
+		h2{
+			b ackground-color: #9BC3FF;
+			border-radius: 30px;
+			width: 100%;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
-
+	<div>
+	<h2>회원가입</h2>
+	<form>
+			<!-- 아이디, 비밀번호, 이름, 이메일 저장번호 -->
+			아이디&nbsp&nbsp&nbsp :&nbsp<input type="text"name="userid" size="20" maxlength="10" title="사용자 아이디"><br>
+			비밀번호 : <input type="password" name="userpw" size="20" ><br>
+			이름&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : <input type="text" name="username" size="6" placeholder="이름은 3자리 이상입니다"><br>
+			이메일&nbsp&nbsp&nbsp : <input type="text" value="a@gmail.com" name="useremail" disabled><br>
+			성별 : 
+			<input type="radio" value="M" name="usergender" id="gendermale" checked>
+			<label for="gendermale">남자</label>
+			<input type="radio" value="F" name="usergender" id="genderfemale">
+			<label for="genderfemale">여자</label>
+			<br>
+			거주지역 :
+			<input type="radio" value="Daejeon" name="userlocation" id="locadaejeon"disabled>
+			<label for="locadaejeon">대전</label>
+			<input type="radio" value="etc" name="userlocation" id="locaetc">
+			<label for="locaetc">대전 외</label>
+			
+			<br><br>
+			
+			<button type="button" onclick="join()">회원가입</button>
+			<input id="reset" type="reset" value="초기화">
+	</form>
+	</div>
+	<script type="text/javascript">
+		function join() {
+			alert("회원가입 성공!");
+		}
+	</script>
 </body>
 </html>
