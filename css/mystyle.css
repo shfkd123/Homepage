@@ -73,7 +73,7 @@
 			background-color: green;
 			
 		}
-		section{
+		section, article {
 			float: left;
 			width: 60%;
 			background-color: gray;
@@ -97,5 +97,13 @@
 		h2{
 			text-align: center;
 		}
-		
+		/* #user_id{
+			width: aut/o;
+			height: 30px;
+		}
+		aside #right #login{
+			width: auto;
+			
+		} */
+	
 	</style>
